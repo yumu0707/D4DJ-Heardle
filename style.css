@@ -1,11 +1,12 @@
 body {
-  background-color: rgb(92, 90, 90);
+  background: linear-gradient(90deg, rgba(113, 14, 108, 0.7) 0%,
+      rgba(120, 18, 196, 0.7) 55%, rgba(28, 17, 103, 0.7) 93%);
 }
 
 p {
   font-family: Noto Sans, Arial;
   margin: 0;
-  color:rgb(92, 90, 90);
+  color: rgb(208, 205, 205);
 }
 
 audio {
@@ -14,10 +15,18 @@ audio {
   margin-top: 20px;
 }
 
+.event-logo {
+  padding: 10px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  width: 400px;
+}
+
 .dialogue-box {
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-right: 10px;
   padding: 30px;
 }
@@ -29,32 +38,27 @@ audio {
 
 .pfp-box {
   margin-right: 15px;
-  flex: 1;
+  width: 60px;
 }
 
-.rumi-q,
-.miigo-q {
-  border-radius: 8px;
+.q-box {
+  border-radius: 15px;
   padding: 15px;
-  flex: 7;
+  flex: 1;
   transition: background-color 0.2s;
-}
-
-.rumi-q {
-  background: rgb(248,229,231);
-  background: linear-gradient(170deg, rgba(248,229,231,1) 0%, 
-  rgba(247,215,218,1) 35%, rgb(203, 86, 129) 100%);
+  background-color: rgba(37, 33, 33, 0.4);
 }
 
 .username {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 10px;
+  color:aliceblue;
 }
 
 .usertag {
   font-size: 16px;
-  color: gray;
+  color: rgb(221, 221, 221);
   font-weight: 400;
   margin-left: 5px;
 }
@@ -67,11 +71,6 @@ audio {
   height: 100px;
 }
 
-.miigo-q {
-  background: rgb(249,226,182);
-  background: linear-gradient(170deg, rgba(249,226,182,1) 0%, 
-  rgba(249,214,148,1) 35%, rgb(155, 110, 33) 100%);
-}
 
 .audio-section {
   display: flex;

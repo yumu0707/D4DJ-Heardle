@@ -1,34 +1,88 @@
-body {
-  background: linear-gradient(90deg, rgba(113, 14, 108, 0.7) 0%,
+:root {
+  --d4-blend: linear-gradient(90deg, rgba(113, 14, 108, 0.7) 0%,
       rgba(120, 18, 196, 0.7) 55%, rgba(28, 17, 103, 0.7) 93%);
+
+  --ri4-blend: linear-gradient(0deg, rgb(226, 153, 174) 0%,
+      rgb(231, 211, 201) 31%, rgb(230, 203, 150) 44%,
+      rgba(155, 62, 76, 1) 100%);
+
+  --bg: var(--d4-blend);
+}
+
+body {
+  background: var(--bg);
 }
 
 p {
   font-family: Noto Sans, Arial;
   margin: 0;
-  color: rgb(208, 205, 205);
+  color: rgb(221, 221, 221);
+  padding: 5px;
 }
 
 audio {
-  height: 40px;
-  margin-left: 20px;
-  margin-top: 20px;
+  height: 2.5rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
 }
+
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.theme-selector>fieldset {
+  border: 0;
+  display: flex;
+  gap: 2rem;
+  background-color: rgba(242, 221, 221, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 0 0 1rem 1rem;
+  justify-content: end;
+}
+
+.theme-selector input[type="radio"] {
+  appearance: none;
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid var(--radio-color, currentColor);
+  border-radius: 50%;
+}
+
+.theme-selector input[type="radio"]:checked {
+  background-color: var(--radio-color);
+}
+
+.color-picker input[type="radio"] #d4 {
+  --radio-color: var(--d4-blend);
+}
+
+.color-picker input[type="radio"] #ri4 {
+  --radio-color: var(--ri4-blend);
+}
+
+:root:has(#ri4:checked) {
+  --bg: var(--ri4-blend);
+}
+
 
 .event-logo {
   padding: 10px;
   display: block;
   margin: auto;
-  margin-top: 10px;
   width: 400px;
 }
 
 .dialogue-box {
   display: flex;
   flex-direction: row;
-  margin-top: 10px;
-  margin-right: 10px;
-  padding: 30px;
+  padding: 25px;
+  justify-content: center;
 }
 
 .pfp {
@@ -39,21 +93,28 @@ audio {
 .pfp-box {
   margin-right: 15px;
   width: 60px;
+  min-width: 50px;
 }
 
 .q-box {
+  flex: 1;
   border-radius: 15px;
   padding: 15px;
-  flex: 1;
-  transition: background-color 0.2s;
-  background-color: rgba(37, 33, 33, 0.4);
+  transition: background-color 0.3s;
+  background-color: rgba(48, 43, 43, 0.4);
+  max-width: 700px;
+  cursor: pointer;
+}
+
+.q-box:hover {
+  background-color: rgba(10, 10, 10, 0.5);
 }
 
 .username {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 10px;
-  color:aliceblue;
+  color: aliceblue;
 }
 
 .usertag {
@@ -77,4 +138,19 @@ audio {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.end {
+  background-color: rgba(238, 230, 230, 0.4);
+  margin: 10px auto;
+  width: fit-content;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.end-message {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: small;
+  color: black;
 }

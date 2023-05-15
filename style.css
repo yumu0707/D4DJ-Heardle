@@ -6,18 +6,26 @@
       rgb(231, 211, 201) 31%, rgb(230, 203, 150) 44%,
       rgba(155, 62, 76, 1) 100%);
 
+  --rondo-blend: linear-gradient(180deg, rgba(229, 185, 218, 1) 0%,
+      rgba(70, 92, 167, 1) 80%, rgba(54, 47, 162, 1) 100%);
+
+  --d4-dark: rgba(28, 17, 103, 0.7);
+  --ri4-dark: rgb(155, 62, 76);
+  --rondo-light: rgb(210, 170, 200);
+
   --bg: var(--d4-blend);
 }
 
 body {
   background: var(--bg);
+  line-height: 1.5;
+  font-family: Noto Sans, Arial;
+  margin: 0;
 }
 
 p {
-  font-family: Noto Sans, Arial;
-  margin: 0;
   color: rgb(221, 221, 221);
-  padding: 5px;
+  margin: 0;
 }
 
 audio {
@@ -36,14 +44,19 @@ audio {
   width: 1px;
 }
 
+.theme-pos {
+  display: flex;
+  justify-content: flex-end;
+}
 .theme-selector>fieldset {
   border: 0;
   display: flex;
   gap: 2rem;
-  background-color: rgba(242, 221, 221, 0.5);
+  margin-right: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 1rem 2rem;
   border-radius: 0 0 1rem 1rem;
-  justify-content: end;
+  width: fit-content;
 }
 
 .theme-selector input[type="radio"] {
@@ -52,30 +65,42 @@ audio {
   height: 2rem;
   border: 3px solid var(--radio-color, currentColor);
   border-radius: 50%;
+  background-clip: content-box;
+  padding: 3px;
 }
 
 .theme-selector input[type="radio"]:checked {
   background-color: var(--radio-color);
 }
 
-.color-picker input[type="radio"] #d4 {
-  --radio-color: var(--d4-blend);
+.theme-selector input[type="radio"]#d4 {
+  --radio-color: var(--d4-dark);
 }
 
-.color-picker input[type="radio"] #ri4 {
-  --radio-color: var(--ri4-blend);
+.theme-selector input[type="radio"]#ri4 {
+  --radio-color: var(--ri4-dark);
+}
+
+.theme-selector input[type="radio"]#rondo {
+  --radio-color: var(--rondo-light);
 }
 
 :root:has(#ri4:checked) {
   --bg: var(--ri4-blend);
 }
 
+:root:has(#rondo:checked) {
+  --bg: var(--rondo-blend);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
 
 .event-logo {
   padding: 10px;
-  display: block;
-  margin: auto;
-  width: 400px;
+  width: 370px;
 }
 
 .dialogue-box {
@@ -99,7 +124,7 @@ audio {
 .q-box {
   flex: 1;
   border-radius: 15px;
-  padding: 15px;
+  padding: 1rem;
   transition: background-color 0.3s;
   background-color: rgba(48, 43, 43, 0.4);
   max-width: 700px;
@@ -141,7 +166,7 @@ audio {
 }
 
 .end {
-  background-color: rgba(238, 230, 230, 0.4);
+  background-color: rgba(238, 230, 230, 0.6);
   margin: 10px auto;
   width: fit-content;
   border-radius: 10px;

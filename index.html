@@ -2,27 +2,35 @@
 <html lang="JP">
 
 <head>
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="d-style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="theme-pos">
+
+  <div class="dropdown">
     <form class="theme-selector" action="">
-      <fieldset>
-        <label for="d4" class="sr-only">Classic D4</label>
-        <input type="radio" name="theme" id="d4" checked>
+      <button class="theme-button">
+        <strong>Select a theme <span class="down">&#x25BC;</span></strong>
+      </button>
+      <div class="dropdown-options">
+        <fieldset>
+          <div class="opt">
+            <label for="d4">Classic D4</label>
+            <input type="radio" name="theme" id="d4" checked>
+          </div>
 
-        <label for="ri4" class="sr-only">Ri4 Sunset</label>
-        <input type="radio" name="theme" id="ri4">
-
-        <label for="rondo" class="sr-only">Rondo Dynamic</label>
-        <input type="radio" name="theme" id="rondo">
-      </fieldset>
+          <div class="opt">
+            <label for="ri4">Ri4 Sunset</label>
+            <input type="radio" name="theme" id="ri4">
+          </div>
+        </fieldset>
+      </div>
+    </form>
   </div>
-  </form>
 
   <div class="logo">
     <img class="event-logo" src="icons/logo.png">
@@ -30,17 +38,58 @@
 
   <div class="dialogue-box">
     <div class="pfp-box">
-      <img class="pfp" src="icons/kurumi_icon.webp">
+      <img class="pfp" src="icons/icon_airi.png">
+    </div>
+    <div class="q-box">
+      <p class="username">
+        天野愛莉
+        <img class="unit-icon" src="icons/icon_coa.png">
+        <span class="usertag">@Amano_Airi</span>
+      </p>
+      <p>
+        Ah it's you, <i>Diggler-san</i>. Welcome to <strong>Season 2 of Song Guessing</strong>.
+        Are you ready to take on another challenge?
+      </p>
+
+      <p class="instructions">
+        As usual, we reccomend using a browser on PC with split screen so you can fill
+        in the answers as you go. Link to the answer sheet can be found down below.
+        If you have any issues with the song clips, please contact Cho via Discord.
+      </p>
+
+      <p class="instructions">
+        I'll let the <strong>LyriLily</strong> girls host you now.
+        Do remember to come to Cafe Vinyl. We have new menu items for you to try :)
+      </p>
+
+      <div class="audio-section">
+        <div>
+          <a href="https://forms.gle/nPo61XbkqoSMYY2q7" target=”_blank”>
+            <button class="ans">
+              <strong>Open answer sheet in new tab</strong>
+            </button>
+          </a>
+        </div>
+        <div>
+          <img class="sign" src="icons/sign_airi.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dialogue-box">
+    <div class="pfp-box">
+      <img class="pfp" src="icons/icon_kurumi.png">
     </div>
     <div class="q-box">
       <p class="username">
         白鳥胡桃
-        <img class="unit-icon" src="icons/ri4_icon.webp">
+        <img class="unit-icon" src="icons/icon_ri4.png">
         <span class="usertag">@Shiratori_Kurumi</span>
       </p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
       <div class="audio-section">
         <div>
@@ -49,7 +98,7 @@
           </audio>
         </div>
         <div>
-          <img class="sign" src="icons/rumi_sign.png">
+          <img class="sign" src="icons/sign_rumi.png">
         </div>
       </div>
     </div>
@@ -57,17 +106,17 @@
 
   <div class="dialogue-box">
     <div class="pfp-box">
-      <img class="pfp" src="icons/miigo_icon.webp">
+      <img class="pfp" src="icons/icon_miiko.png">
     </div>
     <div class="q-box">
       <p class="username">
         竹下みいこ
-        <img class="unit-icon" src="icons/ri4_icon.webp">
+        <img class="unit-icon" src="icons/icon_ri4.png">
         <span class="usertag">@Takeshita_Miiko</span>
       </p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
       <div class="audio-section">
         <div>
@@ -76,7 +125,7 @@
           </audio>
         </div>
         <div>
-          <img class="sign" src="icons/miigo_sign.webp">
+          <img class="sign" src="icons/sign_miigo.png">
         </div>
       </div>
     </div>
@@ -84,17 +133,17 @@
 
   <div class="dialogue-box">
     <div class="pfp-box">
-      <img class="pfp" src="icons/kurumi_icon.webp">
+      <img class="pfp" src="icons/icon_kurumi.png">
     </div>
     <div class="q-box">
       <p class="username">
         白鳥胡桃
-        <img class="unit-icon" src="icons/ri4_icon.webp">
+        <img class="unit-icon" src="icons/icon_ri4.png">
         <span class="usertag">@Shiratori_Kurumi</span>
       </p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
       <div class="audio-section">
         <div>
@@ -103,7 +152,7 @@
           </audio>
         </div>
         <div>
-          <img class="sign" src="icons/rumi_sign.png">
+          <img class="sign" src="icons/sign_rumi.png">
         </div>
       </div>
     </div>
@@ -111,17 +160,17 @@
 
   <div class="dialogue-box">
     <div class="pfp-box">
-      <img class="pfp" src="icons/miigo_icon.webp">
+      <img class="pfp" src="icons/icon_miiko.png">
     </div>
     <div class="q-box">
       <p class="username">
         竹下みいこ
-        <img class="unit-icon" src="icons/ri4_icon.webp">
+        <img class="unit-icon" src="icons/icon_ri4.png">
         <span class="usertag">@Takeshita_Miiko</span>
       </p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
       <div class="audio-section">
         <div>
@@ -130,45 +179,42 @@
           </audio>
         </div>
         <div>
-          <img class="sign" src="icons/miigo_sign.webp">
+          <img class="sign" src="icons/sign_miigo.png">
         </div>
       </div>
     </div>
   </div>
-</body>
 
-</html>
-
-<div class="dialogue-box">
-  <div class="pfp-box">
-    <img class="pfp" src="icons/kurumi_icon.webp">
-  </div>
-  <div class="q-box">
-    <p class="username">
-      白鳥胡桃
-      <img class="unit-icon" src="icons/ri4_icon.webp">
-      <span class="usertag">@Shiratori_Kurumi</span>
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua.
-    </p>
-    <div class="audio-section">
-      <div>
-        <audio controls>
-          <source src="audio_clips/andaa.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-      <div>
-        <img class="sign" src="icons/rumi_sign.png">
+  <div class="dialogue-box">
+    <div class="pfp-box">
+      <img class="pfp" src="icons/icon_kurumi.png">
+    </div>
+    <div class="q-box">
+      <p class="username">
+        白鳥胡桃
+        <img class="unit-icon" src="icons/icon_ri4.png">
+        <span class="usertag">@Shiratori_Kurumi</span>
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <div class="audio-section">
+        <div>
+          <audio controls>
+            <source src="audio_clips/andaa.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <div>
+          <img class="sign" src="icons/sign_rumi.png">
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="end">
-  <p class="end-message">End of Challenge</p>
-</div>
+  <div class="end">
+    <p class="end-message">End of Challenge</p>
+  </div>
 
 </body>
 

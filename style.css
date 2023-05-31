@@ -51,7 +51,7 @@ audio {
   border: 3px solid var(--radio-color, currentColor);
   border-radius: 50%;
   background-clip: content-box;
-  padding: 3px;
+  padding: 0.2rem;
 }
 
 .theme-button {

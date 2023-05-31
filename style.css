@@ -6,12 +6,8 @@
       rgb(231, 211, 201) 31%, rgb(230, 203, 150) 44%,
       rgba(155, 62, 76, 1) 100%);
 
-  --rondo-blend: linear-gradient(180deg, rgba(229, 185, 218, 1) 0%,
-      rgba(70, 92, 167, 1) 80%, rgba(54, 47, 162, 1) 100%);
-
   --d4-dark: rgba(28, 17, 103, 0.7);
   --ri4-dark: rgb(155, 62, 76);
-  --rondo-light: rgb(210, 170, 200);
 
   --bg: var(--d4-blend);
 }
@@ -34,39 +30,62 @@ audio {
   margin-top: 1rem;
 }
 
-.sr-only {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.theme-pos {
+.dropdown {
   display: flex;
   justify-content: flex-end;
+  margin-right: 3rem;
 }
-.theme-selector>fieldset {
+
+.dropdown-options>fieldset {
   border: 0;
-  display: flex;
-  gap: 2rem;
-  margin-right: 2rem;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 1rem 2rem;
   border-radius: 0 0 1rem 1rem;
-  width: fit-content;
+  padding: 0 1.5rem;
 }
 
 .theme-selector input[type="radio"] {
   appearance: none;
-  width: 2rem;
-  height: 2rem;
+  display: inline;
+  margin-left: 1rem;
+  width: 2.3rem;
+  height: 2.3rem;
   border: 3px solid var(--radio-color, currentColor);
   border-radius: 50%;
   background-clip: content-box;
   padding: 3px;
+}
+
+.theme-button {
+  border: none;
+  background: rgba(48, 43, 43, 0.4);
+  font-family: Noto Sans;
+  font-size: 1rem;
+  color: white;
+  border-radius: 0.3rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+
+.down {
+  font-size: 0.8rem;
+  margin-left: 0.2rem;
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 0 0 5px 5px;
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+}
+
+.opt {
+  display: flex;
+  line-height: 3rem;
+  margin: 0.5rem 0;
 }
 
 .theme-selector input[type="radio"]:checked {
@@ -81,21 +100,14 @@ audio {
   --radio-color: var(--ri4-dark);
 }
 
-.theme-selector input[type="radio"]#rondo {
-  --radio-color: var(--rondo-light);
-}
-
 :root:has(#ri4:checked) {
   --bg: var(--ri4-blend);
-}
-
-:root:has(#rondo:checked) {
-  --bg: var(--rondo-blend);
 }
 
 .logo {
   display: flex;
   justify-content: center;
+  margin-top: 1rem;
 }
 
 .event-logo {
@@ -128,7 +140,6 @@ audio {
   transition: background-color 0.3s;
   background-color: rgba(48, 43, 43, 0.4);
   max-width: 700px;
-  cursor: pointer;
 }
 
 .q-box:hover {
@@ -157,11 +168,31 @@ audio {
   height: 100px;
 }
 
+.ans {
+  padding: 0.8rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-family: Noto Sans;
+  border: solid 0.17rem white;
+  background: none;
+  cursor: pointer;
+  color: rgb(221, 221, 221);
+  transition: transform 0.15s;
+}
+
+.ans:hover{
+  transform: perspective(0.2rem) scale3d(1.044, 1.044, 1) translateZ(0);
+}
+
+.instructions {
+  margin-top: 1rem;
+}
 
 .audio-section {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: 1rem;
   justify-content: space-between;
 }
 
@@ -170,12 +201,11 @@ audio {
   margin: 10px auto;
   width: fit-content;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
 }
 
 .end-message {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: small;
+  font-size: 0.8rem;
   color: black;
 }

@@ -2,268 +2,259 @@
 <html lang="JP">
 
 <head>
-  <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="sample.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="dropdown">
-    <form class="theme-selector" action="">
-      <button class="theme-button">
-        <strong>Select a theme <span class="down">&#x25BC;</span></strong>
-      </button>
-      <div class="dropdown-options">
-        <fieldset>
-          <div class="opt">
-            <label for="d4">Classic D4</label>
-            <input type="radio" name="theme" id="d4" checked>
-          </div>
 
-          <div class="opt">
-            <label for="ri4">Ri4 Sunset</label>
-            <input type="radio" name="theme" id="ri4">
-          </div>
-        </fieldset>
-      </div>
-    </form>
-  </div>
-
-  <div class="logo">
-    <img class="event-logo" src="icons/logo.png">
-  </div>
-
-  <div class="dialogue-box">
-    <div class="pfp-box">
-      <img class="pfp" src="icons/icon_airi.png">
-    </div>
-    <div class="q-box">
-      <p class="username">
-        天野愛莉
-        <img class="unit-icon" src="icons/icon_coa.png">
-        <span class="usertag">@Amano_Airi</span>
-      </p>
-      <p>
-        Ah it's you, <i>Diggler-san</i>. Welcome to <strong>Season 2 of Song Guessing</strong>.
-        Are you ready to take on another challenge?
-      </p>
-
-      <p class="instructions">
-        As usual, we reccomend using a browser on PC with split screen so you can fill
-        in the answers as you go. Link to the answer sheet can be found down below.
-      </p>
-
-      <p class="instructions">
-        I'll let the <strong>LyriLily</strong> girls host you now.
-        Do remember to come to Cafe Vinyl. We have new menu items for you to try :)
-      </p>
-
-      <div class="audio-section">
-        <div>
-          <a href="https://forms.gle/nPo61XbkqoSMYY2q7" target=”_blank”>
-            <button class="ans">
-              <strong>Open answer sheet in new tab</strong>
+    <div class="dropdown">
+        <form class="theme-selector" action="">
+            <button class="theme-button">
+                <strong>Select a theme <span class="down">&#x25BC;</span></strong>
             </button>
-          </a>
-        </div>
-        <div>
-          <img class="airi-sign" src="icons/sign_airi.png">
-        </div>
-      </div>
-    </div>
-  </div>
+            <div class="dropdown-options">
+                <fieldset>
+                    <div class="opt">
+                        <label for="d4">Classic D4</label>
+                        <input type="radio" name="theme" id="d4" checked>
+                    </div>
 
-  <div class="dialogue-box">
-    <div class="pfp-box">
-      <img class="pfp" src="icons/icon_kurumi.png">
+                    <div class="opt">
+                        <label for="ri4">Ri4 Sunset</label>
+                        <input type="radio" name="theme" id="ri4">
+                    </div>
+                </fieldset>
+            </div>
+        </form>
     </div>
-    <div class="q-box">
-      <p class="username">
-        白鳥胡桃
-        <img class="unit-icon" src="icons/icon_ri4.png">
-        <span class="usertag">@Shiratori_Kurumi</span>
-      </p>
-      <p>
-        Wai wai! The new season is here! Diggler-san, are you ready for the pra-
-        I mean the clips I prepared? Here, try this as a warmup!
-      </p>
-      <div class="audio-section">
-        <div>
-          <audio controls id="song1">
-            <source src="audio_clips/2-1-1_2s.mp3" type="audio/mp3">
-          </audio>
-        </div>
-        <div>
-          <img class="rumi-sign" src="icons/sign_rumi.png">
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="dialogue-box">
-    <div class="pfp-box">
-      <img class="pfp" src="icons/icon_miiko.png">
+    <div class="logo">
+        <img class="event-logo" src="icons/logo.png">
     </div>
-    <div class="q-box">
-      <p class="username">
-        竹下みいこ
-        <img class="unit-icon" src="icons/icon_ri4.png">
-        <span class="usertag">@Takeshita_Miiko</span>
-      </p>
-      <p>
-        Miiko is also super excited nano! Hmmm, which song should I pick...? Sou da! 
-        Diggler-san, how about this one?
-      </p>
-      <div class="audio-section">
-        <div>
-          <audio controls id="song2">
-            <source src="audio_clips/2-1-2_2s.mp3" type="audio/mp3">
-          </audio>
-        </div>
-        <div>
-          <img class="miigo-sign" src="icons/sign_miigo.png">
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="dialogue-box">
-    <div class="pfp-box">
-      <img class="pfp" src="icons/icon_kurumi.png">
-    </div>
-    <div class="q-box">
-      <p class="username">
-        白鳥胡桃
-        <img class="unit-icon" src="icons/icon_ri4.png">
-        <span class="usertag">@Shiratori_Kurumi</span>
-      </p>
-      <p>
-        Hehehe~ Miiko-chan, I found a really good one. 
-        I bet Diggler-san will have a hard time guessing this one <em>:getpranked:</em>
-      </p>
-      <div class="audio-section">
-        <div>
-          <audio controls id="song3">
-            <source src="audio_clips/2-1-3_2s.mp3" type="audio/mp3">
-          </audio>
+    <div class="dialogue-box">
+        <div class="pfp-box">
+            <img class="pfp" src="icons/icon_airi.png">
         </div>
-        <div>
-          <img class="rumi-sign" src="icons/sign_rumi.png">
-        </div>
-      </div>
-    </div>
-  </div>
+        <div class="q-box">
+            <p class="username">
+                天野愛莉
+                <img class="unit-icon" src="icons/icon_coa.png">
+                <span class="usertag">@Amano_Airi</span>
+            </p>
+            <p>
+                Ah it's you, <i>Diggler-san</i>. Welcome to <strong>Season 2 of Song Guessing</strong>.
+                Are you ready to take on another challenge?
+            </p>
 
-  <div class="dialogue-box">
-    <div class="pfp-box">
-      <img class="pfp" src="icons/icon_miiko.png">
-    </div>
-    <div class="q-box">
-      <p class="username">
-        竹下みいこ
-        <img class="unit-icon" src="icons/icon_ri4.png">
-        <span class="usertag">@Takeshita_Miiko</span>
-      </p>
-      <p>
-        Kurumi-chan ii idea! Miiko also needs a good one nano!
-        What do you this of this one, Kurumi-chan?
-      </p>
-      <div class="audio-section">
-        <div>
-          <audio controls id="song4">
-            <source src="audio_clips/2-1-4_2s.mp3" type="audio/mp3">
-          </audio>
-        </div>
-        <div>
-          <img class="miigo-sign" src="icons/sign_miigo.png">
-        </div>
-      </div>
-    </div>
-  </div>
+            <p class="instructions">
+                As usual, we reccomend using a browser on PC with split screen so you can fill
+                in the answers as you go. Link to the answer sheet can be found down below.
+            </p>
 
-  <div class="dialogue-box">
-    <div class="pfp-box">
-      <img class="pfp" src="icons/icon_kurumi.png">
-    </div>
-    <div class="q-box">
-      <p class="username">
-        白鳥胡桃
-        <img class="unit-icon" src="icons/icon_ri4.png">
-        <span class="usertag">@Shiratori_Kurumi</span>
-      </p>
-      <p>
-        Ii ne Miiko-chan! Prank daiseikou! Diggler-san, here is the final pra- 
-        Here is the final clip for this round. Have fun! 
-      </p>
-      <div class="audio-section">
-        <div>
-          <audio controls id="song5">
-            <source src="audio_clips/2-1-5_2s.mp3" type="audio/mp3">
-          </audio>
+            <p class="instructions">
+                I'll let the <strong>LyriLily</strong> girls host you now.
+                Do remember to come to Cafe Vinyl. We have new menu items for you to try :)
+            </p>
+
+            <div class="audio-section">
+                <div>
+                    <a href="https://forms.gle/nPo61XbkqoSMYY2q7" target=”_blank”>
+                        <button class="ans">
+                            <strong>Open answer sheet in new tab</strong>
+                        </button>
+                    </a>
+                </div>
+                <div>
+                    <img class="airi-sign" src="icons/sign_airi.png">
+                </div>
+            </div>
         </div>
-        <div>
-          <img class="rumi-sign" src="icons/sign_rumi.png">
+    </div>
+
+    <div class="dialogue-box">
+        <div class="pfp-box">
+            <img class="pfp" src="icons/icon_kurumi.png">
         </div>
-      </div>
+        <div class="q-box">
+            <p class="username">
+                白鳥胡桃
+                <img class="unit-icon" src="icons/icon_ri4.png">
+                <span class="usertag">@Shiratori_Kurumi</span>
+            </p>
+            <p>
+                Wai wai! The new season is here! Diggler-san, are you ready for the pra-
+                I mean the clips I prepared? Here, try this as a warmup!
+            </p>
+            <div>
+                <audio controls id="song1">
+                    <source src="audio_clips/2-1-1_2s.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="hint">
+                <img class="rumi-sign" src="icons/sign_rumi.png">
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="end">
-    <p class="end-message">End of Challenge</p>
-  </div>
+    <div class="dialogue-box">
+        <div class="pfp-box">
+            <img class="pfp" src="icons/icon_miiko.png">
+        </div>
+        <div class="q-box">
+            <p class="username">
+                竹下みいこ
+                <img class="unit-icon" src="icons/icon_ri4.png">
+                <span class="usertag">@Takeshita_Miiko</span>
+            </p>
+            <p>
+                Miiko is also super excited nano! Hmmm, which song should I pick...? Sou da!
+                Diggler-san, how about this one?
+            </p>
+            <div>
+                <audio controls id="song2">
+                    <source src="audio_clips/2-1-2_2s.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="hint">
+                <img class="miigo-sign" src="icons/sign_miigo.png">
+            </div>
+        </div>
+    </div>
 
-  <div class="dialogue-box">
-    <div class="pfp-box">
-      <img class="pfp" src="icons/icon_miiko.png">
+    <div class="dialogue-box">
+        <div class="pfp-box">
+            <img class="pfp" src="icons/icon_kurumi.png">
+        </div>
+        <div class="q-box">
+            <p class="username">
+                白鳥胡桃
+                <img class="unit-icon" src="icons/icon_ri4.png">
+                <span class="usertag">@Shiratori_Kurumi</span>
+            </p>
+            <p>
+                Hehehe~ Miiko-chan, I found a really good one.
+                I bet Diggler-san will have a hard time guessing this one <em>:getpranked:</em>
+            </p>
+            <div>
+                <audio controls id="song3">
+                    <source src="audio_clips/2-1-3_2s.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="hint">
+                <img class="rumi-sign" src="icons/sign_rumi.png">
+            </div>
+        </div>
     </div>
-    <div class="q-box">
-      <p class="username">
-        竹下みいこ
-        <img class="unit-icon" src="icons/icon_ri4.png">
-        <span class="usertag">@Takeshita_Miiko</span>
-      </p>
-      <p>
-        Diggler-san, if you are stuck on some of the questions, please go find
-        our knowledgeable <strong>Haruna-chan</strong> for help. Best of luck to you!
-      </p>
-      <div class="hint">
-        <img class="miigo-sign" src="icons/sign_miigo.png">
-      </div>
-    </div>
-  </div>
 
-  <div class="footer">
-    <div class="footer-text">
-      <h2>About this event</h2>
-      <p>
-        For detailed rules and important updateds for this event, please check corresponding announcements in
-        <a class="server-link" href="http://discord.gg/D4DJ" target=”_blank”>D4DJ server</a>.
-      </p>
+    <div class="dialogue-box">
+        <div class="pfp-box">
+            <img class="pfp" src="icons/icon_miiko.png">
+        </div>
+        <div class="q-box">
+            <p class="username">
+                竹下みいこ
+                <img class="unit-icon" src="icons/icon_ri4.png">
+                <span class="usertag">@Takeshita_Miiko</span>
+            </p>
+            <p>
+                Kurumi-chan ii idea! Miiko also needs a good one nano!
+                What do you this of this one, Kurumi-chan?
+            </p>
+            <div>
+                <audio controls id="song4">
+                    <source src="audio_clips/2-1-4_2s.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="hint">
+                <img class="miigo-sign" src="icons/sign_miigo.png">
+            </div>
+        </div>
     </div>
-    <div class="footer-text">
-      <h2>Any issues?</h2>
-      <p>Song clips aren't playing? Please contact Cho via Discord
+
+    <div class="dialogue-box">
+        <div class="pfp-box">
+            <img class="pfp" src="icons/icon_kurumi.png">
+        </div>
+        <div class="q-box">
+            <p class="username">
+                白鳥胡桃
+                <img class="unit-icon" src="icons/icon_ri4.png">
+                <span class="usertag">@Shiratori_Kurumi</span>
+            </p>
+            <p>
+                Ii ne Miiko-chan! Prank daiseikou! Diggler-san, here is the final pra-
+                Here is the final clip for this round. Have fun!
+            </p>
+            <div>
+                <audio controls id="song5">
+                    <source src="audio_clips/2-1-5_2s.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="hint">
+                <img class="rumi-sign" src="icons/sign_rumi.png">
+            </div>
+        </div>
     </div>
-  </div>
+
+    <div class="end">
+        <p class="end-message">End of Challenge</p>
+    </div>
+
+    <div class="dialogue-box">
+        <div class="pfp-box">
+            <img class="pfp" src="icons/icon_miiko.png">
+        </div>
+        <div class="q-box">
+            <p class="username">
+                竹下みいこ
+                <img class="unit-icon" src="icons/icon_ri4.png">
+                <span class="usertag">@Takeshita_Miiko</span>
+            </p>
+            <p>
+                Diggler-san, if you are stuck on some of the questions, please go find
+                our knowledgeable <strong>Haruna-chan</strong> for help. Best of luck to you!
+            </p>
+            <div class="hint">
+                <img class="miigo-sign" src="icons/sign_miigo.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-text">
+            <h2>About this event</h2>
+            <p>
+                For detailed rules and important updateds for this event, please check corresponding announcements in
+                <a class="server-link" href="http://discord.gg/D4DJ" target=”_blank”>D4DJ server</a>.
+            </p>
+        </div>
+        <div class="footer-text">
+            <h2>Any issues?</h2>
+            <p>Song clips aren't playing? Please contact Cho via Discord
+        </div>
+    </div>
 </body>
 
 <script>
-  let audio1 = document.getElementById("song1");
-  audio1.volume = 0.5;
+    let audio1 = document.getElementById("song1");
+    audio1.volume = 0.5;
 
-  let audio2 = document.getElementById("song2");
-  audio2.volume = 0.5;
+    let audio2 = document.getElementById("song2");
+    audio2.volume = 0.5;
 
-  let audio3 = document.getElementById("song3");
-  audio3.volume = 0.5;
+    let audio3 = document.getElementById("song3");
+    audio3.volume = 0.5;
 
-  let audio4 = document.getElementById("song4");
-  audio4.volume = 0.5;
+    let audio4 = document.getElementById("song4");
+    audio4.volume = 0.5;
 
-  let audio5 = document.getElementById("song5");
-  audio5.volume = 0.5;
+    let audio5 = document.getElementById("song5");
+    audio5.volume = 0.5;
 </script>
 
 </html>

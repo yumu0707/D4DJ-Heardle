@@ -178,8 +178,13 @@
     height: 25px;
   }
   
-  .sign {
+  .rumi-sign,
+  .airi-sign {
     height: 90px;
+  }
+
+  .miigo-sign {
+    height: 80px;
   }
   
   .ans {

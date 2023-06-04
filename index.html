@@ -3,7 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="d-style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
@@ -54,7 +54,6 @@
       <p class="instructions">
         As usual, we reccomend using a browser on PC with split screen so you can fill
         in the answers as you go. Link to the answer sheet can be found down below.
-        If you have any issues with the song clips, please contact Cho via Discord.
       </p>
 
       <p class="instructions">
@@ -88,13 +87,16 @@
         <span class="usertag">@Shiratori_Kurumi</span>
       </p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Wai wai! The new season is here! Diggler-san, are you ready for the pra-
+        I mean the clips I prepared? Here, try this as a warmup!
       </p>
       <div class="audio-section">
         <div>
-          <audio controls>
-            <source src="audio_clips/andaa.mp3" type="audio/mpeg">
+          <h3>Clip #1<h3>
+        </div>
+        <div>
+          <audio controls id="song1">
+            <source src="audio_clips/2-1-1_2s.mp3" type="audio/mp3">
           </audio>
         </div>
         <div>
@@ -115,13 +117,16 @@
         <span class="usertag">@Takeshita_Miiko</span>
       </p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Miiko is also super excited nano! Hmmm, which song should I pick...? Sou da! 
+        Diggler-san, how about this one?
       </p>
       <div class="audio-section">
         <div>
-          <audio controls>
-            <source src="audio_clips/andaa.mp3" type="audio/mpeg">
+          <h3>Clip #2<h3>
+        </div>
+        <div>
+          <audio controls id="song2">
+            <source src="audio_clips/2-1-2_2s.mp3" type="audio/mp3">
           </audio>
         </div>
         <div>
@@ -142,13 +147,16 @@
         <span class="usertag">@Shiratori_Kurumi</span>
       </p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Hehehe~ Miiko-chan, I found a really good one. 
+        I bet Diggler-san will have a hard time guessing this one <em>:getpranked:</em>
       </p>
       <div class="audio-section">
         <div>
-          <audio controls>
-            <source src="audio_clips/andaa.mp3" type="audio/mpeg">
+          <h3>Clip #3<h3>
+        </div>
+        <div>
+          <audio controls id="song3">
+            <source src="audio_clips/2-1-3_2s.mp3" type="audio/mp3">
           </audio>
         </div>
         <div>
@@ -169,13 +177,16 @@
         <span class="usertag">@Takeshita_Miiko</span>
       </p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Kurumi-chan ii idea! Miiko also needs a good one nano!
+        What do you this of this one, Kurumi-chan?
       </p>
       <div class="audio-section">
         <div>
-          <audio controls>
-            <source src="audio_clips/andaa.mp3" type="audio/mpeg">
+          <h3>Clip #4<h3>
+        </div>
+        <div>
+          <audio controls id="song4">
+            <source src="audio_clips/2-1-4_2s.mp3" type="audio/mp3">
           </audio>
         </div>
         <div>
@@ -196,13 +207,16 @@
         <span class="usertag">@Shiratori_Kurumi</span>
       </p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ii ne Miiko-chan! Prank daiseikou! Diggler-san, here is the final pra- 
+        Here is the final clip for this round. Have fun! 
       </p>
       <div class="audio-section">
         <div>
-          <audio controls>
-            <source src="audio_clips/andaa.mp3" type="audio/mpeg">
+          <h3>Clip #5<h3>
+        </div>
+        <div>
+          <audio controls id="song5">
+            <source src="audio_clips/2-1-5_2s.mp3" type="audio/mp3">
           </audio>
         </div>
         <div>
@@ -216,6 +230,56 @@
     <p class="end-message">End of Challenge</p>
   </div>
 
+  <div class="dialogue-box">
+    <div class="pfp-box">
+      <img class="pfp" src="icons/icon_miiko.png">
+    </div>
+    <div class="q-box">
+      <p class="username">
+        竹下みいこ
+        <img class="unit-icon" src="icons/icon_ri4.png">
+        <span class="usertag">@Takeshita_Miiko</span>
+      </p>
+      <p>
+        Diggler-san, if you are stuck on some of the questions, please go find
+        our knowledgeable <strong>Haruna-chan</strong> for help. Best of luck to you!
+      </p>
+      <div class="hint">
+        <img class="sign" src="icons/sign_miigo.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-text">
+      <h2>About this event</h2>
+      <p>
+        For detailed rules and important updateds for this event, please check corresponding announcements in
+        <a class="server-link" href="http://discord.gg/D4DJ" target=”_blank”>D4DJ server</a>.
+      </p>
+    </div>
+    <div class="footer-text">
+      <h2>Any issues?</h2>
+      <p>Song clips aren't playing? Please contact Cho via Discord
+    </div>
+  </div>
 </body>
+
+<script>
+  let audio1 = document.getElementById("song1");
+  audio1.volume = 0.5;
+
+  let audio2 = document.getElementById("song2");
+  audio2.volume = 0.5;
+
+  let audio3 = document.getElementById("song3");
+  audio3.volume = 0.5;
+
+  let audio4 = document.getElementById("song4");
+  audio4.volume = 0.5;
+
+  let audio5 = document.getElementById("song5");
+  audio5.volume = 0.5;
+</script>
 
 </html>
